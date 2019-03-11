@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en"> 
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Sally Student Resume</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="main.css">
+        <script
+        src="https://unpkg.com/react@16/umd/react.development.js"
+        crossorigin>
+        </script>
+        <script
+        src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"
+        crossorigin>
+        </script>
+        <script
+        src="https://unpkg.com/babel-standalone@6/babel.min.js"
+        crossorigin>
+        </script>
+    </head>
+    <body>
+        <div id="application-root"></div>
+
+<!--ACTUAL REACT SCRIPT-->
+        <script type="text/babel">    
+        // App Component
+             function App(props) {
+                 console.log(props)
+                 return (
+                     <header className={props.className}>{props.children}</header>
+                 );
+             }
+     
+     // Use App Component:
+     // insert the App's element tree into the #application-root
+         ReactDOM.render(<App 
+         className='sally-resume-header'>
+             <h1>Sally Student</h1>
+                <h2>Web Developer</h2>
+                    <img src='SallyResume.jpg' alt='resumepic' />
+           <main>         
+            <section className='contact-info'>     
+                <h2>Contact Information</h2>
+                        <address>
+                            <a href='tel:+123-456-7890'>+123-456-7890</a>
+                            <a href='mailto:sally123@student.com'>sally123@student.com</a>
+                        </address>
+            </section>
+
+            <section className='education'>
+                <h2>Education</h2>
+                        <p>-La Croix High School-Class of 2011</p>
+                        <p>-University of Colorado-Liberal Arts-Class of 2015</p>
+                    
+            </section>
+
+            <section className='work-experience'>
+                <h3>Work Experience</h3>
+                    <h4> Sweet Cow Ice Cream-Scooper-July 2011 to July 2014</h4>
+                        <p>Provide quality service to all customers in a timely manner. Scoop ice cream and prepare shakes. Clean, organize, and upkeep the store at all times. Grade A customer service, always.</p>
+                    
+                    <h4>La Croix Elementary-Human Resources-August 2011 to Present</h4>
+                        <p>Providing human resources services, recruiting staff, processing employees, updating records, improving employee retention levels, and enforcing safety and health policies.</p>
+            </section>
+        </main>
+        </App>
+         , 
+         document.querySelector('#application-root'));
+     
+        
+         </script>
+        <script src="index.js"></script>
+    </body>
+</html>

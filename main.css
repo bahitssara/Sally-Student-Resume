@@ -1,0 +1,112 @@
+* {
+    font-family: sans-serif;
+    text-align: center;
+    box-sizing: border-box;
+    color: white;
+    background-color: rgba(86, 67, 127, 0.86);
+}
+
+img {
+    width: 250px;
+    height: auto;
+}
+
+a {
+    display:block;
+}
+
+h1 {
+    text-shadow: 1px 3px 4px black;
+    ;
+}
+
+h2 {
+    text-shadow: 1px 3px 4px black;
+}
+
+h3 {
+    text-shadow: 1px 3px 4px black;
+}
+
+h4{
+    text-shadow: 1px 2px 2px black;
+}
+
+.contact-info {
+    width: 300px;
+    height: auto;
+    margin: auto;
+}
+
+.education {
+    width: 300px;
+    height: auto;
+    margin:auto;
+}
+
+.work-experience {
+    width:500px;
+    margin: auto;
+}
+
+
+@media screen and (min-width: 320px) {
+
+    body {
+        font-size: 18px;
+    }
+
+    .sally-resume-header {
+        padding-top: 20px;
+    }
+
+    .contact-info {
+        width: 250px;
+        height: auto;
+        margin: auto;
+    }
+    
+    .education {
+        width: 250px;
+        height: auto;
+        margin:auto;
+    }
+    
+    .work-experience {
+        width:300px;
+        height:auto;
+        margin: auto;
+    }
+}
+
+@media screen and (min-width: 765px) {
+
+    body {
+        font-size: 25px;
+    }
+
+    .sally-resume-header {
+        padding-top: 30px;
+    }
+
+    .contact-info {
+        width: 350px;
+        height: auto;
+        margin: auto;
+    }
+    
+    .education {
+        width: 350px;
+        height: auto;
+        margin:auto;
+    }
+    
+    .work-experience {
+        width:450px;
+        height:auto;
+        margin: auto;
+        padding-bottom: 40px;
+    }
+}
+
+
